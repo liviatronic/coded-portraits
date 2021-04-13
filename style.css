@@ -157,6 +157,7 @@ section.white {
 	padding-top: 28px;
 	font-size: 22px;
 	line-height: 26.4px;
+	max-width: 540px;
 }
 
 /* section 3 */
@@ -427,6 +428,10 @@ section.white {
 	padding-bottom: 24px;
 }
 
+.square p {
+	max-width: 400px;
+}
+
 .square div {
 	flex: 0 0 calc(50% - 30px);
 	font-size: 32px;
@@ -522,6 +527,7 @@ section.white {
 .bib-split {
 	column-count: 2;
 	column-gap: 64px;
+	max-width: 800px;
 }
 
 .bib-split p {
@@ -549,12 +555,32 @@ section.white {
 
 @media screen and (min-width:1440px) {
 
-
+	.header h1 {
+		font-size: 8vw;
+		line-height: 7vw;
+	}
 
 	.header p {
 		max-width: 720px;
 	}
 
+	/* wider margins */
+	section {
+		padding: 0 10vw;
+	}
+
+	/* image width for wider margins */
+	.img-block-4 {
+		width: calc(63% + 10vw);
+		margin-right: -10vw;
+	}
+
+	.full-width {
+		left: -10vw;
+		width: calc(100% + 20vw);
+	}
+
+	/* headline max-width */
 	.sec-2-text,
 	.sec-3-text,
 	.sec-4-text,
@@ -563,24 +589,21 @@ section.white {
 		max-width: 900px;
 	}
 
-	.sec-5-text {
-		width: 62%;
-	}
-
 	.img-block-2 img {
 		margin-top: -8vw;
 	}
 
 	.sec-5-text {
+		width: 70%;
 		padding-top: 17%;
 	}
 
 	.sec-5-txt {
-		margin-top: 80%;
+		margin-top: 90%;
 	}
 
-	.img-block-2 img {
-		margin-top: -150px;
+	.square {
+		width: 80%;
 	}
 
 }
